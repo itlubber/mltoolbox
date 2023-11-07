@@ -28,6 +28,7 @@
 │   │   ├── ranking                 # 排序模型
 │   │   └── tricks                  # 模型训练 tricks 合集
 │   ├── optimizer                   # 超参数搜索器
+│   ├── mertics                     # 评估方法
 │   ├── sampler                     # 采样器
 │   ├── selector                    # 选择器
 │   ├── transformer                 # 转换器
