@@ -6,7 +6,6 @@
 # 项目结构
 
 ```shell
-```shell
 > tree -I __init__.py
 
 .
