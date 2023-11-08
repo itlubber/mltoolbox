@@ -47,3 +47,36 @@
 
 # 环境配置
 
+## 裸机部署
+
+1. 安装 `python` 环境
+
+推荐 `python 3.8.13` ，参照网上教程自行安装即可，也可直接使用系统提供的 `python3` , 版本不易过高, 最低支持 `python 3.6.13+`
+
+2. 环境依赖安装
+
++ 在线环境
+
+```shell
+pip install -r requirements.txt
+```
+
++ 离线环境
+
+离线裸机需先找一台环境和生产一致（python版本和系统一致）的机器或者容器，在在线环境下载依赖项后拷贝到离线环境安装
+
+```shell
+# 在线环境依赖下载
+pip download -d python_lib/ -r requirements.txt
+# 离线环境
+pip install --no-index --find-links=python_lib -r requirements.txt
+```
+
+3. 安装 `mltoolbox` 包
+
+```shell
+# 通过仓库安装
+pip install mltoolbox
+# 通过 git 直接安装
+pip install git+<git仓库地址>@分支名称
+```
